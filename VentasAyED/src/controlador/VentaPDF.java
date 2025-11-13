@@ -35,7 +35,8 @@ public class VentaPDF {
     private String cedulaCliente;
     private String telefonoCliente;
     private String direccionCliente;
-
+    //private String nuermoFactura;
+    
     private String fechaActual = "";
     private String nombreArchivoPDFVenta = "";
 
@@ -67,7 +68,9 @@ public class VentaPDF {
             //cargar la fecha actual
             Date date = new Date();
             fechaActual = new SimpleDateFormat("yyyy/MM/dd").format(date);
-            //cambiar el formato de la fecha de / a _
+            String horaActual = new SimpleDateFormat("HH-mm-ss").format(date);
+            
+            //cambiar el formato de la fecha de / a -
             String fechaNueva = "";
             for (int i = 0; i < fechaActual.length(); i++) {
                 if (fechaActual.charAt(i) == '/') {
@@ -75,7 +78,7 @@ public class VentaPDF {
                 }
             }
 
-            nombreArchivoPDFVenta = "Venta_" + nombreCliente + "_" + fechaNueva + ".pdf";
+            nombreArchivoPDFVenta = "Venta " + nombreCliente + " " + fechaNueva +" "+ horaActual+".pdf";
 
             FileOutputStream archivo;
             File file = new File("src/pdf/" + nombreArchivoPDFVenta);
@@ -85,7 +88,8 @@ public class VentaPDF {
             PdfWriter.getInstance(doc, archivo);
             doc.open();
 
-            Image img = Image.getInstance("src/img/r de ropatech.png");
+            Image img = Image.getInstance("src/img/smartwear logo.png");
+            //img.set
             Paragraph fecha = new Paragraph();
             Font negrita = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD, BaseColor.BLUE);
             fecha.add(Chunk.NEWLINE); //agregar nueva linea
@@ -102,7 +106,7 @@ public class VentaPDF {
             Encabezado.addCell(img);
 
             String ruc = "0611886234";
-            String nombre = "Ropa Tech";
+            String nombre = "SmartWear";
             String telefono = "951481700";
             String direccion = "Lima";
             String razon = "Ropa Tech S.A.C";

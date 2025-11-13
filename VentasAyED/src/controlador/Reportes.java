@@ -36,7 +36,8 @@ public class Reportes {
         try {
         /////// Ruta específica para el usuario Andre
         //String rutaOneDrive = "C:\\Users\\Andre\\OneDrive\\Documentos\\Reportes\\";
-        String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        //String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        String rutaOneDrive = "src/Reportes/";
         
         // Verificar si existe el directorio, si no, crearlo
         File directorio = new File(rutaOneDrive);
@@ -106,7 +107,8 @@ public class Reportes {
         try {
                    /////// Ruta específica para el usuario Andre
         //String rutaOneDrive = "C:\\Users\\Andre\\OneDrive\\Documentos\\Reportes\\";
-        String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        //String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        String rutaOneDrive = "src/Reportes/";
         
         // Verificar si existe el directorio, si no, crearlo
         File directorio = new File(rutaOneDrive);
@@ -185,7 +187,8 @@ public class Reportes {
         try {
           /////// Ruta específica para el usuario Andre
         //String rutaOneDrive = "C:\\Users\\Andre\\OneDrive\\Documentos\\Reportes\\";
-        String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        //String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        String rutaOneDrive = "src/Reportes/";
         
         // Verificar si existe el directorio, si no, crearlo
         File directorio = new File(rutaOneDrive);
@@ -251,7 +254,8 @@ public class Reportes {
         try {
             /////// Ruta específica para el usuario Andre
         //String rutaOneDrive = "C:\\Users\\Andre\\OneDrive\\Documentos\\Reportes\\";
-        String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        //String rutaOneDrive = "C:\\Users\\Harold\\Documents\\NetBeansProjects\\SistemaDeventas1\\src\\Reportes\\";
+        String rutaOneDrive = "src/Reportes/";
         
         // Verificar si existe el directorio, si no, crearlo
         File directorio = new File(rutaOneDrive);
